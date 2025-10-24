@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-
 class NotificationPage extends StatefulWidget {
   const NotificationPage({super.key});
 
   @override
   State<NotificationPage> createState() => _NotificationPageState();
 }
-
 class _NotificationPageState extends State<NotificationPage> {
   @override
   Widget build(BuildContext context) {
@@ -33,7 +31,6 @@ class _NotificationPageState extends State<NotificationPage> {
           IconButton(icon: const Icon(Icons.menu, color: Colors.black),
           onPressed: () {},
           ),
-          
         ],
       ),
       body: SingleChildScrollView(
@@ -71,7 +68,6 @@ class _NotificationPageState extends State<NotificationPage> {
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
-
             NotificationTile(
               avatar: "assets/myday/myday1.jpg",
               message:
@@ -90,15 +86,12 @@ class _NotificationPageState extends State<NotificationPage> {
             ),
 
             const SizedBox(height: 20),
-            
           ],
         ),
       ),
     );
   }
 }
-
-
 class NotificationTile extends StatelessWidget {
   final String avatar;
   final String message;
@@ -152,4 +145,3 @@ class NotificationTile extends StatelessWidget {
     );
   }
 }
-    
